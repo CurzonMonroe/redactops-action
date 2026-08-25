@@ -58,8 +58,17 @@ Get-FileHash .\redactops-win-x64.zip -Algorithm SHA256
 Extract the archive into a durable application directory and add that directory to `PATH`. Keep the included
 `LICENSE`, `THIRD-PARTY-NOTICES.md` and `licenses` directory with the executable.
 
-Early-access binaries may not yet carry platform publisher signatures. Verify the checksum and follow the local
-organisation's software-execution policy if macOS or Windows blocks an unsigned download.
+Early-access macOS binaries are ad-hoc signed and Windows binaries may not yet carry a publisher signature. Verify the
+checksum and follow the local organisation's software-execution policy if the operating system blocks the download.
+If macOS quarantine blocks a checksum-verified archive and local policy explicitly permits early-access software, an
+administrator can remove quarantine from the installed executable with:
+
+```bash
+xattr -d com.apple.quarantine /path/to/redactops
+```
+
+Developer ID signing and Apple notarisation are required before RedactOps is presented as a generally available,
+publisher-verified macOS product.
 
 ### .NET global tool from a GitHub release
 
