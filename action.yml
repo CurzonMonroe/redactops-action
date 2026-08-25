@@ -1,0 +1,65 @@
+name: redactops-action
+description: Scan repositories and pull requests for PII, secrets, credentials, and risky prompt data.
+author: Curzon Monroe
+
+inputs:
+  config:
+    description: Path to the RedactOps configuration file.
+    required: false
+    default: .redactops.yml
+  fail-on:
+    description: Minimum severity that should fail the workflow.
+    required: false
+    default: high
+  format:
+    description: Primary report format.
+    required: false
+    default: sarif
+  output:
+    description: Path for the primary report. Defaults according to the selected format.
+    required: false
+    default: ""
+  sarif:
+    description: Backwards-compatible SARIF output path used when format is sarif and output is empty.
+    required: false
+    default: redactops.sarif
+  markdown-summary:
+    description: Whether to append a Markdown summary to GITHUB_STEP_SUMMARY.
+    required: false
+    default: "true"
+  baseline:
+    description: Optional baseline file path.
+    required: false
+    default: ""
+  license:
+    description: RedactOps licence key. Required for paid Team/Business features.
+    required: false
+    default: ""
+  version:
+    description: Exact RedactOps CLI version to install.
+    required: false
+    default: "0.1.0-rc.5"
+
+runs:
+  using: composite
+  steps:
+    - name: Install RedactOps
+      shell: bash
+      env:
+        REDACTOPS_VERSION: ${{ inputs.version }}
+      run: |
+        "${GITHUB_ACTION_PATH}/scripts/install-redactops-from-github-release.sh" "${REDACTOPS_VERSION}"
+    - name: Scan repository and publish results
+      shell: bash
+      env:
+        REDACTOPS_LICENSE: ${{ inputs.license }}
+        INPUT_CONFIG: ${{ inputs.config }}
+        INPUT_FAIL_ON: ${{ inputs.fail-on }}
+        INPUT_FORMAT: ${{ inputs.format }}
+        INPUT_OUTPUT: ${{ inputs.output }}
+        INPUT_SARIF: ${{ inputs.sarif }}
+        INPUT_MARKDOWN_SUMMARY: ${{ inputs.markdown-summary }}
+        INPUT_BASELINE: ${{ inputs.baseline }}
+        GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+      run: |
+        "${GITHUB_ACTION_PATH}/scripts/run-github-action.sh"

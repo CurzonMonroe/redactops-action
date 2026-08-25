@@ -1,0 +1,139 @@
+RedactOps Proprietary Software Licence
+Version 1.0 - 24 August 2026
+
+Copyright (c) 2026 Curzon Monroe (UK) Limited. All rights reserved.
+
+This licence agreement (the "Licence") is a legal agreement between Curzon
+Monroe (UK) Limited ("Curzon Monroe", "we", "us" or "our") and the individual
+or legal entity that downloads, installs or uses RedactOps ("you" or "your").
+
+By downloading, installing, copying or using RedactOps, you accept this
+Licence. If you do not accept it, do not download, install, copy or use
+RedactOps.
+
+1. Software
+
+"Software" means the RedactOps object code, command-line application, GitHub
+Action, configuration and pattern files, documentation, updates and related
+materials that we provide. Source code is included in the definition if it is
+made available to you, but no source-code rights are granted unless we agree
+otherwise in writing.
+
+2. Licence grant
+
+Subject to this Licence and any applicable order, subscription or signed
+RedactOps licence key, we grant you a limited, non-exclusive,
+non-transferable, non-sublicensable, worldwide licence to:
+
+a. install and use the Software for your own internal business or personal
+   purposes;
+b. permit your employees and contractors to use the Software on your behalf,
+   provided that you remain responsible for their compliance with this
+   Licence; and
+c. make a reasonable number of backup copies.
+
+Free-tier use does not require payment. Features, users, installations and
+other entitlements may be limited by the tier or order under which the
+Software is supplied. A paid entitlement does not transfer ownership of the
+Software.
+
+3. Restrictions
+
+Except where applicable law expressly permits the activity and does not allow
+it to be restricted by contract, you must not:
+
+a. copy the Software except as permitted by this Licence;
+b. modify, adapt, translate, reverse engineer, decompile, disassemble or try to
+   derive the source code or internal operation of the Software;
+c. sell, rent, lease, sublicense, distribute, publish, transfer or make the
+   Software available to a third party, other than to authorised users under
+   section 2;
+d. provide the Software as a hosted or service-bureau product for third parties
+   without our prior written permission;
+e. bypass, disable or interfere with licence validation, feature controls or
+   technical restrictions; or
+f. remove or alter proprietary, copyright or attribution notices.
+
+4. Ownership
+
+The Software is licensed, not sold. Curzon Monroe and its licensors retain all
+right, title and interest in the Software, including all copyright, database
+rights, trade secrets and other intellectual-property rights. No rights are
+granted except those expressly stated in this Licence.
+
+5. Third-party components
+
+The Software includes third-party components governed by their own terms and
+notices. Those terms apply to the relevant components and are provided with
+the Software in THIRD-PARTY-NOTICES.md and the accompanying licence files. If
+a third-party term conflicts with this Licence solely in relation to that
+third-party component, the third-party term takes precedence for that
+component.
+
+6. Updates and support
+
+We may provide updates, fixes or new versions. Unless accompanied by different
+terms, they form part of the Software and are governed by this Licence. This
+Licence does not promise maintenance, support, continued availability or any
+particular update unless an order or separate written agreement says
+otherwise.
+
+7. Your responsibilities
+
+RedactOps helps identify and redact sensitive information, but automated
+detection can produce false positives and false negatives. You are responsible
+for reviewing results, maintaining backups, choosing appropriate configuration
+and deciding whether an output is safe for its intended use. The Software is
+not a substitute for legal, regulatory or professional advice.
+
+8. Term and termination
+
+This Licence continues until terminated. It terminates automatically if you
+materially breach it and, where the breach can be remedied, fail to remedy it
+within 14 days after written notice. On termination you must stop using and
+delete all copies of the Software, except for copies retained solely where law
+requires. Sections 3 to 5 and 9 to 11 survive termination.
+
+9. Warranties
+
+We warrant that we have the right to grant this Licence. Otherwise, to the
+extent permitted by law, the Software is supplied "as is" and "as available".
+We do not promise that it will be uninterrupted, error-free or capable of
+detecting every item of sensitive information.
+
+Nothing in this Licence excludes, restricts or replaces any warranty, remedy
+or statutory right that applicable law does not allow us to exclude or
+restrict, including mandatory consumer rights.
+
+10. Liability
+
+10.1 Nothing in this Licence limits or excludes liability for death or personal
+injury caused by negligence, fraud or fraudulent misrepresentation, or any
+other liability that cannot lawfully be limited or excluded.
+
+10.2 If you use the Software for business purposes, neither party is liable to
+the other for loss of profit, revenue, business, anticipated savings, goodwill
+or data, or for indirect or consequential loss, arising from this Licence or
+the Software.
+
+10.3 Subject to section 10.1, our total aggregate liability arising from this
+Licence or the Software is limited to the greater of GBP 100 and the amount you
+paid us for RedactOps during the 12 months immediately before the event giving
+rise to the claim.
+
+10.4 Sections 10.2 and 10.3 apply only to the extent permitted by applicable
+law. They do not affect remedies or liability that cannot lawfully be limited,
+including mandatory consumer rights.
+
+11. General
+
+If any provision is unenforceable, it will be modified only as far as necessary
+to make it enforceable, and the remaining provisions will continue. A failure
+to enforce a provision is not a waiver. You may not assign or transfer this
+Licence without our prior written consent.
+
+This Licence and any non-contractual dispute or claim arising from it are
+governed by the laws of England and Wales and are subject to the jurisdiction
+of the courts of England and Wales. If you are a consumer, this does not
+deprive you of mandatory rights or a forum available under the law of the
+country in which you live.
